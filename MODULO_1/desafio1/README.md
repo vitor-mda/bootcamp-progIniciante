@@ -1,1 +1,1 @@
-Desafio completo disponível [aqui](https://vitor-mda.github.io/bootcamp-progIniciante/)!
+Desafio completo disponível <a href="https://vitor-mda.github.io/bootcamp-progIniciante/" target="_blank">aqui</a>!
