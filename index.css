@@ -1,0 +1,233 @@
+@keyframes btn {
+    from {
+        transform: scale(0, 0);
+    }
+
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes slideRes {
+    from {
+        transform: translateY(-133px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background: fixed url(https://source.unsplash.com/random?sig=1) no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    margin: 0rem;
+    padding: .5rem;
+
+    color: white;
+
+    background-image: linear-gradient(0deg, rgb(0, 102, 255) 0%, rgb(55, 135, 255) 75%);
+    background-color: rgb(0, 102, 255);
+    
+    border-bottom-width: 6px;
+    border-color: white;
+    border-bottom-style: solid;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: auto;
+    width: 40rem;
+    
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;   
+    border-radius: 0 0 6rem 6rem;    
+}
+
+#page-desc {    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 2.5rem;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 3.5rem;
+    margin: 0 auto;
+    letter-spacing: 8px;
+}
+
+h2 {
+    width: fit-content;
+    margin: 0 auto 2rem;
+    font-weight: 800;
+    font-size: 1.75rem;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 102, 255);
+}
+
+p {
+    margin: .25rem auto;
+    width: fit-content;
+    font-size: 1.075rem;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-content: center;
+    padding: 2rem 6rem;    
+}
+
+#radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+    padding: .5rem;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 1rem 0 1rem 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.input {    
+    width: fit-content;
+    margin: .25rem 0;
+    align-content: center;
+    justify-content: center;
+}
+
+select {
+    width: 6.9rem;
+    height: 2rem;
+    border-width: 1px 1px 1px 0;
+    border-style: solid;
+    border-radius: 0 1rem 1rem 0;
+    border-color: black;
+    border-left-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+select:focus {
+    outline: none;
+}
+
+#button-container {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    margin-left: 4rem;
+    border: solid;
+    border-color: rgba(149, 192, 255, 0.75);
+    border-radius: 2.5rem;
+    color: white;
+    font-size: 2rem;
+    background-color: rgb(0, 102, 255);
+    height: 5rem;
+    width: 5rem;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:active {
+    transform: scale(1.125, 1.125);
+    transition-duration: .015s;
+    background-color: rgb(87, 154, 255);
+}
+
+.btn {
+    animation-name: btn;
+    animation-duration: .25s;
+    animation-timing-function: cubic-bezier(.99,.01,0,1.63);
+}
+
+#results {
+    z-index: -1;
+
+    animation-name: slideRes;
+    animation-duration: .35s;
+
+    display: flex;
+    justify-content: center;
+
+    padding: 1rem 2rem 1.5rem 2rem;
+    width: 29rem;
+
+    border-radius: 0 0 6rem 6rem;
+    border-width: 0 2px 2px 2px;
+    border-style: solid;
+    background-image: linear-gradient(0deg, rgba(140, 0, 255, 0.975) 0%, rgba(172, 70, 255, 0.975) 75%);
+    background-color: rgba(140, 0, 255, 0.975);
+    color: white;
+    font-weight: 700;
+}
+
+#output {
+    width: 23rem;
+}
+
+table {
+    border-collapse: collapse;    
+}
+
+caption {
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+}
+
+tr {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 9rem 7rem 7rem;
+}
+
+th {
+    margin-bottom: .3rem;
+    color: orange;
+}
+
+td {
+    font-size: .8rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    padding: .2rem;
+}
+
+.cash {
+    color: rgb(131, 255, 107);
+}
