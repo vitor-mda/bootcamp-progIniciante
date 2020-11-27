@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+
+    <title>Desafio #1 - Informação Salarial | Bootcamp Programador de Software Iniciante @IGTI</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap">
+    <link rel="icon" href="https://online.igti.com.br/accounts/1/files/141/download?verifier=soiv5rkom4KG1350lKfIMpLLd5KjjIXZDX4d0JMe">
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>EMPRESA</h1>
+    </header>
+    <div id="main-container">
+        
+        <main>
+            <div id="page-desc">
+                <h2>Informação Salarial</h2>
+                <p>Quer saber o maior/menor salário ou a média salarial da EMPRESA?</p>
+                <p>É só escolher uma das funções abaixo e, se optar, o setor! :D</p>
+            </div>
+            <form>
+                <div id="radio">
+                    <div class="input">
+                        <input type="radio" id="maior" value="maior" name="func" onchange="change()">
+                        <label for="maior">MAIOR SALÁRIO</label>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" id="menor" value="menor" name="func" onchange="change()">
+                        <label for="menor">MENOR SALÁRIO</label>
+                    </div>
+
+                    <div class="input">
+                        <input type="radio" id="media" value="media" name="func" onchange="change()">
+                        <label for="media">MÉDIA SALARIAL</label>
+                    </div>
+                </div>
+
+                <select id="setor" name="setor">
+                    <option>--</option>
+                    <option value="Administrativo">Administrativo</option>
+                    <option value="Comercial">Comercial</option>
+                    <option value="Produção">Produção</option>
+                </select>
+                <div id="button-container">
+                    <button hidden id="button" class="btn" type="button" onclick="bClick()">
+                        OK
+                    </button>
+                </div>
+                
+            </form>
+            
+        </main>
+        <div style="display: none;" id="results">
+            <table id="output">
+
+            </table>
+            
+        </div>
+    </div>
+
+    <script src="desafio1.js"></script>
+
+</body>
