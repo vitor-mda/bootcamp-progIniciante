@@ -23,8 +23,7 @@ function bClick() {
     let setor = document.getElementById("setor");
     setor = setor[setor.selectedIndex].value;
     setor = setor === "--" ? false : setor;
-    let func = document.querySelector("input[name = func]:checked").attributes.getNamedItem("value").value;
-    switch (func) {
+    switch (document.querySelector("input[name = func]:checked").value) {
         case "maior":
             maiorSalario(setor); break;
         case "menor":
